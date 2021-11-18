@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Google Review Page</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="page">
+        <img
+          class="banner"
+          src="https://i.ibb.co/J2HjyzM/nates-flowers.jpg"
+          alt="shop banner"
+        />
+        <div class="positive survey_container">
+          <div class="top_container">
+            <h3>Thank you for your feedback!</h3>
+            <h4>We really appreciate it.</h4>
+            <text class="text_bottom_margin text_line_height">
+              We are so pleased to have made you happy! Please tell us what
+              about your experience was great by clicking on the Google icon
+              below. Anything you write would be greatly appreciated.
+            </br>
+            </br>
+              If you include the <b>"town name"</b> and the words
+              <b>"flower delivery"</b> in your review text, it will really help
+              us out:
+            </text>
+          </div>
+          <div class="google_review_container">
+            <div class="google_review_text_container">
+                <img
+                class="review_message"
+                src="./images/review-message.png"
+                alt="click here to leave us a google review"
+                />
+            </div>
+            <a href="https://www.google.com">
+            <img
+                class="google_review_image"
+                src="./images/google-logo.png"
+                alt="link to google review page"
+            />
+            </a>
+            <div class="google_review_text_container empty_container"></div>
+         </div>
+        </div>
+        <div class="negative survey_container">
+          <div class="top_container">
+            <h3>Thank you for your feedback!</h3>
+            <h4>
+              We are sorry you didn't have an ideal experience.
+            </h4>
+            <div class="pre_feedback_container" id="pre_feedback_container">
+                <text>
+                Please tell us more about what went wrong so we can make it up
+                to you.
+                </text>
+                <form>
+                    <label>
+                        Provide Your Feedback Here
+                    </label>
+                    <textarea></textarea>
+                    <div class="checkbox_container">
+                        <div class="unchecked_box" id="unchecked_box"></div>
+                        <div class="checked_box" id="checked_box">
+                        <img class="checkmark" src="./images/check.png" alt="checkmark" />
+                        </div>
+                        <text class="checkbox_text">
+                        Allow us to use this as a review on our website and
+                        marketing materials?
+                        </text>
+                    </div>
+                </form>
+                <button class="submit_button" id="submit_button">
+                    Submit
+                </button>
+            </div>
+            <div class="post_feedback_container" id="post_feedback_container">
+                <text class="text_line_height">
+                  Thank you for taking the time to tell us more about what went
+                  wrong.
+                </br>
+                <text class="text_line_height">
+                  We will reach out directly and make this right!
+                </text>
+            </div>
+          </div>
+          <div class="gri_container_smallest">
+            <a href="https://www.google.com">
+                <img
+                class="google_review_image gri_smallest"
+                src="./images//google-logo.png"
+                alt="link to google review page"
+                />
+            </a>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
