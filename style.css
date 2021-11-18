@@ -109,7 +109,8 @@ text {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
 }
 
 .google_review_text_container {
@@ -132,8 +133,9 @@ text {
   border-left: 1px;
   border-top: 1px;
   border-bottom: 1px;
-  border-color: #b24592;
-  height: 100px;
+  height: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .gri_container_smallest {
@@ -294,14 +296,20 @@ button {
   }
 
   .google_review_container {
-    width: 250px;
+    width: 230px;
   }
 
   .google_review_image {
-    height: 60px;
+    height: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .google_review_text_container {
+    width: 70px;
+  }
+
+  .review_message {
     width: 70px;
   }
 
