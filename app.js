@@ -5,6 +5,7 @@ const submitButton = document.querySelector(".submit_button");
 const logoURL = getUrlVars()["inf_custom_LogoURL"];
 const decodelogoURL = decodeURIComponent(logoURL);
 const googleReviewURL = getUrlVars()["inf_custom_GoogleReviewURL"];
+const view 
 
 // Event Listeners
 uncheckedBox.addEventListener("click", showCheckedBox);
@@ -35,6 +36,13 @@ function getUrlVars() {
       vars[key] = value;
     }
   );
+  if (vars.rating >= 8) {
+    document.getElementById("positive").style.display = "flex";
+    document.getElementById("negative").style.display = "none";
+  } else {
+    document.getElementById("negative").style.display = "flex";
+    document.getElementById("positive").style.display = "none";
+  }
   return vars;
 }
 
