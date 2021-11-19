@@ -5,7 +5,6 @@ const submitButton = document.querySelector(".submit_button");
 const logoURL = getUrlVars()["inf_custom_LogoURL"];
 const decodelogoURL = decodeURIComponent(logoURL);
 const googleReviewURL = getUrlVars()["inf_custom_GoogleReviewURL"];
-const view 
 
 // Event Listeners
 uncheckedBox.addEventListener("click", showCheckedBox);
@@ -13,6 +12,10 @@ checkedBox.addEventListener("click", showUncheckedBox);
 submitButton.addEventListener("click", submitFeedback);
 
 // Functions
+window.onload = function () {
+  getUrlVars();
+};
+
 function showCheckedBox() {
   document.getElementById("unchecked_box").style.display = "none";
   document.getElementById("checked_box").style.display = "flex";
@@ -47,4 +50,5 @@ function getUrlVars() {
 }
 
 document.getElementById("banner").src = decodelogoURL;
-document.getElementById("google_review_url").href = googleReviewURL;
+document.getElementById("google_review_url_1").href = googleReviewURL;
+document.getElementById("google_review_url_2").href = googleReviewURL;
