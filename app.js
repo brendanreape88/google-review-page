@@ -39,13 +39,13 @@ function getUrlVars() {
       vars[key] = value;
     }
   );
-  if (vars.rating >= 8) {
-    document.getElementById("positive").style.display = "flex";
-    document.getElementById("negative").style.display = "none";
-  } else {
-    document.getElementById("negative").style.display = "flex";
-    document.getElementById("positive").style.display = "none";
-  }
+  // if (vars.rating >= 8) {
+  document.getElementById("positive").style.display = "flex";
+  document.getElementById("negative").style.display = "none";
+  // } else {
+  //   document.getElementById("negative").style.display = "flex";
+  //   document.getElementById("positive").style.display = "none";
+  // }
   return vars;
 }
 
