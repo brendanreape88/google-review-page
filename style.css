@@ -101,7 +101,7 @@ h4 {
 
 .positive_h4 {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: 400;
@@ -338,11 +338,37 @@ button {
     font-size: 23px;
   }
 
+  .positive_h3 {
+    font-size: 15px;
+  }
+
   h4 {
     font-size: 15px;
   }
 
+  .positive_h4 {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+
+  .positive_span {
+    font-size: 13px;
+  }
+
   text {
+    font-size: 12px;
+  }
+
+  .text_positive {
+    font-size: 12px;
+  }
+
+  .text_positive_2 {
     font-size: 12px;
   }
 
